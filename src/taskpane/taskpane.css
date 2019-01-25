@@ -23,7 +23,7 @@ h6 {
     padding: 0;
 }
 
-.ms-welcome {
+.welcome {
     position: relative;
     display: -webkit-flex;
     display: flex;
@@ -35,9 +35,10 @@ h6 {
     min-width: 320px;
     overflow: auto;
     overflow-x: hidden;
+    font-family: 'Segoe UI WestEuropean', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
-.ms-welcome__header {
+.welcome__header {
     min-height: 250px;
     padding: 20px;
     padding-bottom: 30px;
@@ -53,12 +54,12 @@ h6 {
     justify-content: flex-end;
 }
 
-.ms-welcome__header > h1 {
+.welcome__header > h1 {
     margin-top: 30px;
     text-align: center;
 }
 
-.ms-welcome__main {
+.welcome__main {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
@@ -72,17 +73,17 @@ h6 {
     padding: 30px 20px;
 }
 
-.ms-welcome__main > h2 {
+.welcome__main > h2 {
     width: 100%;
     text-align: center;
 }
 
-.ms-welcome__features {
+.welcome__features {
     list-style-type: none;
     margin-top: 30px;
 }
 
-.ms-welcome__features.ms-List .ms-ListItem {
+.welcome__features.List .ListItem {
     padding: 0px;
     padding-bottom: 20px;
     display: -webkit-flex;
@@ -95,15 +96,15 @@ h6 {
     align-items: center;
 }
 
-.ms-welcome__features.ms-List .ms-ListItem > .ms-Icon {
+.welcome__features.List .ListItem > .ms-Icon {
     font-size: 14pt;
 }
 
-.ms-welcome__features.ms-List .ms-ListItem > .ms-Icon {
+.welcome__features.List .ListItem > .ms-Icon {
     margin-right: 10px;
 }
 
-.ms-welcome__action.ms-Button--hero {
+.welcome__action.Button--hero {
     margin-top: 30px;
     display: -webkit-flex;
     display: flex;
@@ -117,19 +118,66 @@ h6 {
     align-items: center;
 }
 
-.ms-welcome__action.ms-Button--hero .ms-Button-icon .ms-Icon {
+.welcome__action.Button--hero .Button-icon .ms-Icon {
     margin-left: 5px;
-    margin-top: 4px;
+    margin-top: 8px;
     border: none;
     font-size: 14pt;
 }
 
-.ms-welcome__action.ms-Button--hero:hover .ms-Button-icon .ms-Icon {
-    border: none;
+
+  
+.Button.Button--hero .Button-icon {
+    color: #0078d7;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
 }
 
+  
+.Button.Button--hero .Button-label {
+    color: #0078d7;
+    font-size: 21px;
+    font-weight: 100;
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.Button.Button--hero:hover .Button-icon,
+.Button.Button--hero:focus .Button-icon {
+    color: #005a9e;
+    cursor: pointer;
+}
+
+  
+.Button.Button--hero:hover .Button-label,
+.Button.Button--hero:focus .Button-label {
+    color: #004578;
+    cursor: pointer;
+}
+  
+.Button.Button--hero:active .Button-icon {
+    color: #0078d7;
+}
+  
+.Button.Button--hero:active .Button-label {
+    color: #0078d7;
+}
+  
+.Button.Button--hero:disabled .Button-icon,
+.Button.Button--hero.is-disabled .Button-icon {
+    color: #c8c8c8;
+}
+  
+.Button.Button--hero:disabled .Button-label,
+.Button.Button--hero.is-disabled .Button-label {
+    color: #a6a6a6;
+}
+
+
 @media (min-width: 0) and (max-width: 350px) {
-    .ms-welcome__features {
+    .welcome__features {
         width: 100%;
     }
 }
