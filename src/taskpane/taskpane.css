@@ -23,7 +23,7 @@ h6 {
     padding: 0;
 }
 
-.welcome {
+.ms-welcome {
     position: relative;
     display: -webkit-flex;
     display: flex;
@@ -35,10 +35,11 @@ h6 {
     min-width: 320px;
     overflow: auto;
     overflow-x: hidden;
-    font-family: 'Segoe UI WestEuropean', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+    font-family: 'Segoe UI WestEuropean', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    color: #333333;
 }
 
-.welcome__header {
+.ms-welcome__header {
     min-height: 250px;
     padding: 20px;
     padding-bottom: 30px;
@@ -52,14 +53,17 @@ h6 {
     align-items: center;
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
+    background: #f4f4f4;
 }
 
-.welcome__header > h1 {
+.ms-welcome__header > h1 {
     margin-top: 30px;
     text-align: center;
+    font-size: 42px;
+    font-weight: lighter;
 }
 
-.welcome__main {
+.ms-welcome__main {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
@@ -73,17 +77,19 @@ h6 {
     padding: 30px 20px;
 }
 
-.welcome__main > h2 {
+.ms-welcome__main > h2 {
     width: 100%;
     text-align: center;
+    font-size: 21px;
+    font-weight: lighter;
 }
 
-.welcome__features {
+.ms-welcome__features {
     list-style-type: none;
     margin-top: 30px;
 }
 
-.welcome__features.List .ListItem {
+.ms-welcome__features.ms-List .ms-ListItem {
     padding: 0px;
     padding-bottom: 20px;
     display: -webkit-flex;
@@ -94,17 +100,18 @@ h6 {
     flex-wrap: nowrap;
     -webkit-align-items: center;
     align-items: center;
+    font-size: 14px;
 }
 
-.welcome__features.List .ListItem > .ms-Icon {
+.ms-welcome__features.ms-List .ms-ListItem > .ms-Icon {
     font-size: 14pt;
 }
 
-.welcome__features.List .ListItem > .ms-Icon {
+.ms-welcome__features.ms-List .ms-ListItem > .ms-Icon {
     margin-right: 10px;
 }
 
-.welcome__action.Button--hero {
+.ms-welcome__action.ms-Button--hero {
     margin-top: 30px;
     display: -webkit-flex;
     display: flex;
@@ -118,16 +125,18 @@ h6 {
     align-items: center;
 }
 
-.welcome__action.Button--hero .Button-icon .ms-Icon {
+.ms-welcome__action.ms-Button--hero .ms-Button-icon .ms-Icon {
     margin-left: 5px;
     margin-top: 8px;
     border: none;
     font-size: 14pt;
 }
 
+.ms-welcome__action.ms-Button--hero:hover .ms-Button-icon .ms-Icon {
+    border: none;
+}
 
-  
-.Button.Button--hero .Button-icon {
+.ms-Button.ms-Button--hero .ms-Button-icon {
     color: #0078d7;
     display: inline-block;
     font-size: 12px;
@@ -135,7 +144,7 @@ h6 {
 }
 
   
-.Button.Button--hero .Button-label {
+.ms-Button.ms-Button--hero .ms-Button-label {
     color: #0078d7;
     font-size: 21px;
     font-weight: 100;
@@ -144,34 +153,34 @@ h6 {
     vertical-align: top;
 }
 
-.Button.Button--hero:hover .Button-icon,
-.Button.Button--hero:focus .Button-icon {
+.ms-Button.ms-Button--hero:hover .ms-Button-icon,
+.ms-Button.ms-Button--hero:focus .ms-Button-icon {
     color: #005a9e;
     cursor: pointer;
 }
 
   
-.Button.Button--hero:hover .Button-label,
-.Button.Button--hero:focus .Button-label {
+.ms-Button.ms-Button--hero:hover .ms-Button-label,
+.ms-Button.ms-Button--hero:focus .ms-Button-label {
     color: #004578;
     cursor: pointer;
 }
   
-.Button.Button--hero:active .Button-icon {
+.ms-Button.ms-Button--hero:active .ms-Button-icon {
     color: #0078d7;
 }
   
-.Button.Button--hero:active .Button-label {
+.ms-Button.ms-Button--hero:active .ms-Button-label {
     color: #0078d7;
 }
   
-.Button.Button--hero:disabled .Button-icon,
-.Button.Button--hero.is-disabled .Button-icon {
+.ms-Button.ms-Button--hero:disabled .ms-Button-icon,
+.ms-Button.ms-Button--hero.is-disabled .ms-Button-icon {
     color: #c8c8c8;
 }
   
-.Button.Button--hero:disabled .Button-label,
-.Button.Button--hero.is-disabled .Button-label {
+.ms-Button.ms-Button--hero:disabled .ms-Button-label,
+.ms-Button.ms-Button--hero.is-disabled .ms-Button-label {
     color: #a6a6a6;
 }
 

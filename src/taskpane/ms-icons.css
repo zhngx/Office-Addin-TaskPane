@@ -1,0 +1,31 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at https://aka.ms/fabric-assets-license
+*/
+@font-face {
+  font-family: 'MDL2Icons';
+  src: url('./fonts/ms-icons.woff') format('woff');
+}
+
+.ms-Icon {
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-family: 'MDL2Icons';
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  speak: none;
+}
+
+.ms-Icon--ChevronRight:before { content: "\E76C"; }
+.ms-Icon--Unlock:before { content: "\E785"; }
+.ms-Icon--ChevronRightSmall:before { content: "\E970"; }
+.ms-Icon--ChevronRightMed:before { content: "\E974"; }
+.ms-Icon--Ribbon:before { content: "\E9D1"; }
+.ms-Icon--Design:before { content: "\EB3C"; }
+.ms-Icon--DoubleChevronRight:before { content: "\EDBF"; }
+.ms-Icon--DoubleChevronRight12:before { content: "\EE99"; }
+.ms-Icon--UnlockSolid:before { content: "\F304"; }
+.ms-Icon--RibbonSolid:before { content: "\F345"; }
+.ms-Icon--DoubleChevronRight8:before { content: "\F36E"; }
+.ms-Icon--ChevronRightEnd6:before { content: "\F372"; }
+.ms-Icon--HardDriveUnlock:before { content: "\F55B"; }
