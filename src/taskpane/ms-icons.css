@@ -3,7 +3,7 @@
 */
 @font-face {
   font-family: 'MDL2Icons';
-  src: url('./fonts/ms-icons.woff') format('woff');
+  src: url('../../fonts/ms-icons.woff') format('woff');
 }
 
 .ms-Icon {
@@ -13,7 +13,6 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   font-weight: normal;
-  speak: none;
 }
 
 .ms-Icon--ChevronRight:before { content: "\E76C"; }
