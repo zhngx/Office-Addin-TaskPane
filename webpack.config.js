@@ -9,6 +9,7 @@ module.exports = (env, options) => {
   const config = {
     devtool: "source-map",
     entry: {
+      polyfill: 'babel-polyfill',
       taskpane: "./src/taskpane/taskpane.ts",
       ribbon: "./src/ribbon/ribbon.ts"
     },
@@ -17,6 +18,11 @@ module.exports = (env, options) => {
     },
     module: {
       rules: [
+        {
+          test: /\.ts$/,
+          exclude: /node_modules/,
+          use: 'babel-loader'
+        },
         {
           test: /\.tsx?$/,
           exclude: /node_modules/,
@@ -38,16 +44,19 @@ module.exports = (env, options) => {
       new HtmlWebpackPlugin({
         filename: "taskpane.html",
         template: "./src/taskpane/taskpane.html",
-        chunks: ["taskpane"]
+        chunks: ['polyfill', 'taskpane']
       }),
+      new CopyWebpackPlugin([
+        {
+          to: "taskpane.css",
+          from: "./src/taskpane/taskpane.css"
+        }
+      ]),
       new HtmlWebpackPlugin({
         filename: "ribbon.html",
         template: "./src/ribbon/ribbon.html",
-        chunks: ["ribbon"]
+        chunks: ["polyfill", "ribbon"]
       }),
-      new webpack.ProvidePlugin({
-        Promise: ["es6-promise", "Promise"]
-      })
     ],
     devServer: {
       headers: {
